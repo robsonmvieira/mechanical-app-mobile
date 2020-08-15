@@ -4,27 +4,27 @@ import {
   Container,
   Form,
   LogoApp,
-  LabelForm,
-  Input,
-  BtnLogin,
   ForgetPasswordLink,
-  BtnLoginText,
+  ForgetPassworButton
 } from './styles';
+
+import Button from '../../components/Button';
+
+import Logo from '../../assets/icons/Logo.png';
+import Input from '../../components/Input';
 const Login: React.FC = () => {
   return (
     <>
       <Container>
-        <LogoApp source={require('../../assets/icons/Logo.png')} />
+        <LogoApp source={Logo} />
         <Form>
-          <LabelForm>Email: </LabelForm>
-          <Input />
-          <LabelForm>Password: </LabelForm>
-          <Input />
+          <Input description="Email" />
+          <Input description="Senha" />
         </Form>
-        <BtnLogin>
-          <BtnLoginText>Login</BtnLoginText>
-        </BtnLogin>
-        <ForgetPasswordLink>Ainda não possui Conta ?</ForgetPasswordLink>
+        <Button>Login</Button>
+        <ForgetPassworButton>
+          <ForgetPasswordLink>Ainda não possui Conta ?</ForgetPasswordLink>
+        </ForgetPassworButton>
       </Container>
     </>
   );
