@@ -19,6 +19,10 @@ const Login: React.FC = () => {
     console.log('deu..')
   }, [])
 
+  const goToSignUpPage = useCallback( () => {
+
+  }, [])
+
   return (
     <>
       <Container>
@@ -27,8 +31,8 @@ const Login: React.FC = () => {
           <Input description="Email" />
           <Input description="Senha" />
         </Form>
-        <Button>Login</Button>
-        <ForgetPassworButton onPress={signInHandler}>
+        <Button onPress={signInHandler}>Login</Button>
+        <ForgetPassworButton onPress={goToSignUpPage}>
           <ForgetPasswordLink>Ainda não possui Conta ?</ForgetPasswordLink>
         </ForgetPassworButton>
       </Container>
