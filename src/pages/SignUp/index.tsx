@@ -12,6 +12,7 @@ import Button from '../../components/Button';
 
 import Logo from '../../assets/icons/Logo.png';
 import Input from '../../components/Input';
+import { ScrollView } from 'react-native-gesture-handler';
 
 const SignUp: React.FC = () => {
 
@@ -25,7 +26,7 @@ const SignUp: React.FC = () => {
   }, [])
 
   return (
-    <>
+    <ScrollView>
       <Container>
         <LogoApp source={Logo} />
         <Form>
@@ -39,7 +40,7 @@ const SignUp: React.FC = () => {
           <ForgetPasswordLink>Já possui Conta ?</ForgetPasswordLink>
         </ForgetPassworButton>
       </Container>
-    </>
+    </ScrollView>
   );
 };
 

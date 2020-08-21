@@ -13,7 +13,7 @@ export const LogoApp = styled.Image`
 export const Form = styled.View`
   width: 100%;
   justify-content: flex-start;
-  margin-top: 80px;
+  margin-top: 60px;
 `;
 
 export const ForgetPasswordLink = styled.Text`
